@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleiisc.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mode Choice</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Mode</th>
+          <th>Cost</th>
+          <th>Travel Time</th>
+          <th>Comfort</th>
+          <th>Reliability</th>
+          <th>Safety</th>
+          <th>Environmental Impact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <!-- Add more rows here -->
+      </tbody>
+    </table>
+  </body>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mode Choice Table</title>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<h2>Mode Choice Table</h2>
+<table>
+<tr>
+    <th>Mode</th>
+    <th>Total Travel Time (in minutes)</th>
+    <th>Number of Transfers</th>
+    <th>Total Walk/Wait Time (in minutes)</th>
+    <th>Possible Delay due to Traffic (in minutes)</th>
+    <th>Total One-way Cost (in INR)</th>
+    <th>Extent of Crowding</th>
+    <th>Service Type</th>
+</tr>
+<tr>
+    <td>Bus Type 1</td>
+    <td id="mode1_ivtt"></td>
+    <td id="mode1_trans"></td>
+    <td id="mode1_walktime"></td>
+    <td id="mode1_tvariab"></td>
+    <td id="mode1_tcost"></td>
+    <td id="mode1_crowd"></td>
+    <td id="mode1_serv"></td>
+</tr>
+<tr>
+    <td>Bus Type 2</td>
+    <td id="mode2_ivtt"></td>
+    <td id="mode2_trans"></td>
+    <td id="mode2_walktime"></td>
+    <td id="mode2_tvariab"></td>
+    <td id="mode2_tcost"></td>
+    <td id="mode2_crowd"></td>
+    <td id="mode2_serv"></td>
+</tr>
+<tr>
+    <td>Metro/Walk or Bicycle</td>
+    <td id="mode4_ivtt"></td>
+    <td id="mode4_trans"></td>
+    <td id="mode4_walktime"></td>
+    <td id="mode4_tvariab"></td>
+    <td id="mode4_tcost"></td>
+    <td id="mode4_crowd"></td>
+    <td id="mode4_serv"></td>
+</tr>
+<tr>
+    <td>Ride-hailing Car</td>
+    <td id="mode5_ivtt"></td>
+    <td id="mode5_trans"></td>
+    <td id="mode5_walktime"></td>
+    <td id="mode5_tvariab"></td>
+    <td id="mode5_tcost"></td>
+    <td id="mode5_crowd"></td>
+    <td id="mode5_serv"></td>
+</tr>
+<tr>
+    <td>Auto</td>
+    <td id="mode7_ivtt"></td>
+    <td id="mode7_trans"></td>
+    <td id="mode7_walktime"></td>
+    <td id="mode7_tvariab"></td>
+    <td id="mode7_tcost"></td>
+    <td id="mode7_crowd"></td>
+    <td id="mode7_serv"></td>
+</tr>
+<tr>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JSON Data Example</title>
+    </head>
+    <body>
+        <table id="data-table">
+            <tr>
+                <th>Choice situation</th>
+                <th>Mode 1</th>
+                <th>Mode 2</th>
+                <th>Mode 4</th>
+                <th>Mode 5</th>
+                <th>Mode 6</th>
+                <th>Mode 7</th>
+                <th>Mode 8</th>
+                <th>Mode 9</th>
+            </tr>
+        </table>
+        
+        <div class="mode-choice-table">
+            <div class="mode-row mode-header">
+              <div class="mode-col">Mode 1</div>
+              <div class="mode-col">Mode 2</div>
+              <div class="mode-col">Mode 3</div>
+              <div class="mode-col">Mode 4</div>
+            </div>
+            <div class="mode-row">
+              <div class="mode-col"><input type="radio" name="mode-choice" value="Bus Type 1" checked>Bus Type 1</div>
+              <div class="mode-col"><input type="radio" name="mode-choice" value="Bus Type 2">Bus Type 2</div>
+              <div class="mode-col"><input type="radio" name="mode-choice" value="Walk / Bicycle">Walk / Bicycle</div>
+              <div class="mode-col"><input type="radio" name="mode-choice" value="" disabled></div>
+            </div>
+            <div class="mode-row">
+              <div class="mode-col"></div>
+              <div class="mode-col"></div>
+              <div class="mode-col">Metro</div>
+              <div class="mode-col"><input type="radio" name="mode-choice" value="Own Car"></div>
+            </div>
+            <div class="mode-row">
+              <div class="mode-col"></div>
+              <div class="mode-col"></div>
+              <div class="mode-col">Metro</div>
+              <div class="mode-col"><input type="radio" name="mode-choice" value="Own Two-wheeler"></div>
+            </div>
+            <div class="mode-row">
+              <div class="mode-col"></div>
+              <div class="mode-col"></div>
+              <div class="mode-col">Metro</div>
+              <div class="mode-col"><input type="radio" name="mode-choice" value="" disabled></div>
+            </div>
+            <div class="mode-row">
+              <div class="mode-col"></div>
+              <div class="mode-col"></div>
+              <div class="mode-col">Metro</div>
+              <div class="mode-col"><input type="radio" name="mode-choice" value="" disabled></div>
+            </div>
+            <div class="mode-row">
+              <div class="mode-col"></div>
+              <div class="mode-col"></div>
+              <div class="mode-col">Metro</div>
+              <div class="mode-col"><input type="radio" name="mode-choice" value="" disabled></div>
+            </div>
+          </div>
+          
+          <table>
+            <thead>
+              <tr>
+                <th>Mode</th>
+                <th>IVTT</th>
+                <th>Title</th>
+                <th>Mode 4</th>
+                <th>Mode 5</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label>
+                    <input type="radio" name="mode" value="Bus Type 1" checked>
+                    Bus Type 1
+                  </label>
+                </td>
+                <td>IVTT value for Bus Type 1</td>
+                <td>Mode 3 title</td>
+                <td>Own Car</td>
+                <td>Auto</td>
+              </tr>
+              <tr>
+                <td>
+                  <label>
+                    <input type="radio" name="mode" value="Bus Type 2">
+                    Bus Type 2
+                  </label>
+                </td>
+                <td>IVTT value for Bus Type 2</td>
+                <td>Mode 3 title</td>
+                <td>Own Two-wheeler</td>
+                <td>Ride-hailing Car</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="mode-choice-table">
+            <thead>
+              <tr>
+                <th>Mode</th>
+                <th>Mode name</th>
+                <th>Mode description</th>
+                <th>Mode type</th>
+                <th>IVTT</th>
+                <th>Travel time outside vehicle(s)</th>
+                <th>Possible delay due to traffic</th>
+                <th>Total one-way cost</th>
+                <th>Extent of crowding</th>
+                <th>Service type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Auto</td>
+                <td>Self-driven car or bike</td>
+                <td>Personal vehicle</td>
+                <td>15 min</td>
+                <td>10 min</td>
+                <td>Low</td>
+                <td>Rs. 50</td>
+                <td>N/A</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Ride-hailing Cab</td>
+                <td>Ola, Uber or similar app-based cab services</td>
+                <td>Public transport</td>
+                <td>20 min</td>
+                <td>15 min</td>
+                <td>Medium</td>
+                <td>Rs. 80</td>
+                <td>N/A</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Bus Type 1</td>
+                <td>Regular city bus service</td>
+                <td>Public transport</td>
+                <td>45 min</td>
+                <td>20 min</td>
+                <td>High</td>
+                <td>Rs. 30</td>
+                <td>All seats occupied; standing space available</td>
+                <td>Express Non-AC</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Bus Type 2</td>
+                <td>AC city bus service</td>
+                <td>Public transport</td>
+                <td>40 min</td>
+                <td>25 min</td>
+                <td>High</td>
+                <td>Rs. 50</td>
+                <td>Many seats available</td>
+                <td>Ordinary</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Train</td>
+                <td>Local train service</td>
+                <td>Public transport</td>
+                <td>30 min</td>
+                <td>10 min</td>
+                <td>Low</td>
+                <td>Rs. 20</td>
+                <td>Some seats available</td>
+                <td>Express AC</td>
+              </tr>
+            </tbody>
+          </table>
+                            
+  
+  
+
+</div>
+<script src="jsiisc"></script>
+</body>
+</html>

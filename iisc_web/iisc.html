@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="styleiisc.css">
+<head>
+	<title>Means of Travel Survey</title>
+	<style>
+		.container {
+			margin: 20px;
+		}
+		h1 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		input[type="radio"] {
+			margin-right: 10px;
+		}
+		button {
+			margin-top: 20px;
+			font-size: 16px;
+			font-weight: bold;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #0069d9;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="col">Means of Travel Survey</h1>
+		<form>
+			<label><input type="radio" name="travel" value="bus"> Bus</label>
+			<label><input type="radio" name="travel" value="metro"> Metro</label>
+			<label><input type="radio" name="travel" value="two-wheeler"> Own Two-wheeler</label>
+			<label><input type="radio" name="travel" value="car"> Own Car</label>
+			<label><input type="radio" name="travel" value="walk"> Walk / Bicycle</label>
+			<label><input type="radio" name="travel" value="auto"> Auto</label>
+			<label><input type="radio" name="travel" value="ride-hailing"> App based ride hailing cab services including Ola / Uber</label>
+			<!-- <button type="submit">Submit</button> -->
+		</form>
+        <br>
+        <h1>Distance to travel</h1>
+        <label><input type="radio" name="q2" value="5km"> &lt; 5 km</label><br>
+        <label><input type="radio" name="q2" value="5-10km"> 5 - 10 km</label><br>
+        <label><input type="radio" name="q2" value="10-15km"> 10 - 15 km</label><br>
+        <label><input type="radio" name="q2" value="15-20km"> 15 - 20 km</label><br>
+        <label><input type="radio" name="q2" value="20-25km"> 20 - 25 km</label><br>
+         <a type="submit"  href="iisc1.html" ><button>Submit</button></a>
+	</div>
+    <script src="jsiisc"></script>
+    <div id="sample_db_0km.json"></div>
+</body>
+</html>

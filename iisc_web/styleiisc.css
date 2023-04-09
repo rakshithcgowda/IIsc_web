@@ -1,0 +1,87 @@
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+col{
+    background-color: brown;
+}  
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+border: 1px solid black;
+padding: 8px;
+text-align: center;
+}
+  
+  th {
+    background-color: #cccccc;
+}
+
+.mode-choice-table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .mode-row {
+    display: table-row;
+  }
+  
+  .mode-col {
+    display: table-cell;
+    padding: 5px;
+    border: 1px solid black;
+  }
+  
+  .mode-header {
+    font-weight: bold;
+  }
+  
+  .mode-col input[type="radio"] {
+    margin-right: 5px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #ccc;
+  }
+  
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  label {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .mode-choice-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .mode-choice-table th,
+  .mode-choice-table td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .mode-choice-table th {
+    background-color: #ddd;
+  }
+  
+      
+  
